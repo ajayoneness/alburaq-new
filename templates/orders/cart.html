@@ -17,7 +17,7 @@
         {% if cart and cart.items.count > 0 %}
         <div class="flex gap-xl" style="flex-wrap: wrap; align-items: flex-start;">
             <!-- Cart Items -->
-            <div style="flex: 2; min-width: 400px;">
+            <div style="flex: 2; ">
                 {% for item in cart.items.all %}
                 <div class="card" style="padding: 1.5rem; margin-bottom: 1rem;" data-aos="fade-up"
                     id="cart-item-{{ item.pk }}">
