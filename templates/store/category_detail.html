@@ -41,8 +41,8 @@
                 <img src="{{ product.get_main_image.url }}" alt="{{ product.name }}" class="card-image">
                 {% else %}
                 <div class="card-image"
-                    style="background: var(--bg-card-hover); display: flex; align-items: center; justify-content: center;">
-                    <i class="fas fa-image" style="font-size: 3rem; color: var(--text-muted);"></i>
+                    style="background: linear-gradient(135deg, var(--bg-card), var(--bg-darker)); display: flex; align-items: center; justify-content: center;">
+                    <i class="fas fa-box" style="font-size: 3rem; color: var(--gold-primary); opacity: 0.5;"></i>
                 </div>
                 {% endif %}
                 <div class="card-body">

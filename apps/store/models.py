@@ -1,4 +1,5 @@
 from django.db import models
+from django.urls import reverse
 from parler.models import TranslatableModel, TranslatedFields
 
 
@@ -28,6 +29,9 @@ class Category(TranslatableModel):
     
     def __str__(self):
         return self.safe_translation_getter('name', any_language=True) or f"Category {self.pk}"
+    
+    def get_absolute_url(self):
+        return reverse('store:category_detail', kwargs={'slug': self.slug})
     
     def get_products_count(self):
         return self.products.filter(is_active=True).count()
@@ -74,6 +78,9 @@ class Product(TranslatableModel):
     
     def __str__(self):
         return self.safe_translation_getter('name', any_language=True) or f"Product {self.pk}"
+    
+    def get_absolute_url(self):
+        return reverse('store:product_detail', kwargs={'slug': self.slug})
     
     def get_main_image(self):
         """Get the main product image"""

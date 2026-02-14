@@ -51,6 +51,7 @@
                 <li><a href="{% url 'pages:about' %}" class="nav-link {% if request.resolver_match.url_name == 'about' %}active{% endif %}">{% trans "About Us" %}</a></li>
                 <li><a href="{% url 'pages:services' %}" class="nav-link {% if request.resolver_match.url_name == 'services' %}active{% endif %}">{% trans "Services" %}</a></li>
                 <li><a href="{% url 'store:category_list' %}" class="nav-link {% if 'store' in request.path %}active{% endif %}">{% trans "Store" %}</a></li>
+                <!-- <li><a href="#agents" class="nav-link">{% trans "Our Agents" %}</a></li> -->
                 <li><a href="{% url 'tracking:tracking' %}" class="nav-link {% if 'tracking' in request.path %}active{% endif %}">{% trans "Tracking" %}</a></li>
                 <li><a href="{% url 'faq:faq_list' %}" class="nav-link {% if 'faq' in request.path %}active{% endif %}">{% trans "FAQ" %}</a></li>
                 <li><a href="{% url 'pages:contact' %}" class="nav-link {% if request.resolver_match.url_name == 'contact' %}active{% endif %}">{% trans "Contact" %}</a></li>
@@ -124,6 +125,22 @@
                         <a href="{{ SOCIAL_LINKS_SETTINGS.instagram }}" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
                         <a href="{{ SOCIAL_LINKS_SETTINGS.tiktok }}" target="_blank" rel="noopener"><i class="fab fa-tiktok"></i></a>
                         <a href="{{ SOCIAL_LINKS_SETTINGS.youtube }}" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a>
+                        <a href="#" id="telegramToggle" onclick="toggleTelegramPopup(event)"><i class="fab fa-telegram"></i></a>
+                    </div>
+                    
+                    <!-- Telegram Channels Popup -->
+                    <div id="telegramPopup" style="display: none; position: absolute; bottom: 100%; left: 0; background: var(--bg-card); border-radius: var(--radius-lg); padding: 1.5rem; min-width: 350px; box-shadow: 0 10px 40px rgba(0,0,0,0.3); z-index: 1000; margin-bottom: 1rem;">
+                        <h4 style="margin-bottom: 1rem; color: var(--gold-light);"><i class="fab fa-telegram" style="margin-left: 0.5rem;"></i> قنواتنا على تليجرام</h4>
+                        <div style="max-height: 400px; overflow-y: auto;">
+                            {% for channel in telegram_channels %}
+                            <a href="{{ channel.channel_url }}" target="_blank" style="display: block; padding: 0.75rem; margin-bottom: 0.5rem; background: rgba(255,255,255,0.05); border-radius: var(--radius-md); text-decoration: none; color: var(--text-primary); transition: all 0.3s;" onmouseover="this.style.background='rgba(255,255,255,0.1)'" onmouseout="this.style.background='rgba(255,255,255,0.05)'">
+                                <i class="fab fa-telegram" style="color: var(--teal); margin-left: 0.5rem;"></i>
+                                <span style="color: var(--gold-light); font-size: 0.85rem;">{{ channel.category }}</span>
+                            </a>
+                            {% empty %}
+                            <p style="color: var(--text-secondary); font-size: 0.9rem;">قريباً...</p>
+                            {% endfor %}
+                        </div>
                     </div>
                 </div>
                 
@@ -232,6 +249,22 @@
                 setTimeout(() => el.remove(), 300);
             });
         }, 5000);
+        
+        // Telegram Popup Toggle
+        function toggleTelegramPopup(e) {
+            e.preventDefault();
+            const popup = document.getElementById('telegramPopup');
+            popup.style.display = popup.style.display === 'none' ? 'block' : 'none';
+        }
+        
+        // Close Telegram popup when clicking outside
+        document.addEventListener('click', function(e) {
+            const popup = document.getElementById('telegramPopup');
+            const toggle = document.getElementById('telegramToggle');
+            if (popup && toggle && !popup.contains(e.target) && !toggle.contains(e.target)) {
+                popup.style.display = 'none';
+            }
+        });
     </script>
     
     {% block extra_js %}{% endblock %}

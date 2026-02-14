@@ -1,6 +1,6 @@
 from django.conf import settings
 from django.utils.translation import get_language
-from .models import CompanySettings, SocialLink
+from .models import CompanySettings, SocialLink, TelegramChannel
 
 
 def global_settings(request):
@@ -24,6 +24,9 @@ def global_settings(request):
     # Get social links
     social_links = SocialLink.objects.filter(is_active=True)
     
+    # Get telegram channels
+    telegram_channels = TelegramChannel.objects.filter(is_active=True)
+    
     return {
         'COMPANY': company,
         'COMPANY_NAME': settings.COMPANY_NAME,
@@ -32,6 +35,7 @@ def global_settings(request):
         'COMPANY_WHATSAPP': settings.COMPANY_WHATSAPP,
         'SOCIAL_LINKS_SETTINGS': settings.SOCIAL_LINKS,
         'SOCIAL_LINKS': social_links,
+        'telegram_channels': telegram_channels,
         'LANGUAGES': languages,
         'CURRENT_LANGUAGE': current_language,
         'IS_RTL': is_rtl,

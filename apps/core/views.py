@@ -1,8 +1,8 @@
 from django.shortcuts import render
 from django.utils.translation import get_language
 from django.conf import settings
-from .models import Office, SocialLink, CompanySettings, HeroSlide
-from apps.pages.models import Service
+from .models import Office, SocialLink, CompanySettings, HeroSlide, TelegramChannel
+from apps.pages.models import Service, Agent
 from apps.store.models import Category
 
 
@@ -14,6 +14,8 @@ def home(request):
         'services': Service.objects.filter(is_active=True)[:6],
         'categories': Category.objects.filter(is_active=True)[:6],
         'social_links': SocialLink.objects.filter(is_active=True),
+        'telegram_channels': TelegramChannel.objects.filter(is_active=True),
+        'agents': Agent.objects.filter(is_active=True),
     }
     return render(request, 'core/home.html', context)
 
@@ -36,9 +38,7 @@ def set_language(request):
             settings.LANGUAGE_COOKIE_NAME,
             lang_code,
             max_age=365 * 24 * 60 * 60,
-            domain=settings.SESSION_COOKIE_DOMAIN,
-            secure=settings.SESSION_COOKIE_SECURE or False,
-            samesite=settings.SESSION_COOKIE_SAMESITE or 'Lax'
+            httponly=False  # Allow JS access if needed
         )
         translation.activate(lang_code)
     

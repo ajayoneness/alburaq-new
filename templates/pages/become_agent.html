@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+{% load static i18n %}
+
+{% block title %}انضم لوكلاء البراق - AL BURAQ GROUP{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section style="padding: 150px 0 80px; background: linear-gradient(180deg, var(--bg-darker) 0%, var(--bg-dark) 100%);">
+    <div class="container text-center">
+        <h1 class="mb-md" data-aos="fade-up">انضم إلى شبكة <span class="text-gold">وكلاء البراق</span></h1>
+        <p style="color: var(--text-secondary); max-width: 700px; margin: 0 auto; line-height: 1.8;" data-aos="fade-up" data-aos-delay="100">
+            القبطان في الصين
+        </p>
+    </div>
+</section>
+
+<!-- Welcome Intro -->
+<section class="section">
+    <div class="container">
+        <div class="card" style="padding: 3rem; max-width: 900px; margin: 0 auto;" data-aos="fade-up">
+            <p style="color: var(--text-primary); line-height: 2; text-align: justify; font-size: 1.1rem;">
+                انضم إلى شبكة وكلاء مجموعة البراق – القبطان في الصين، وكن جزءاً من منظومة تجارة دولية متكاملة توفر لك الوصول المباشر إلى أفضل المصانع والمعدات والحلول اللوجستية من الصين إلى مختلف أنحاء العالم.
+            </p>
+            <p style="color: var(--text-secondary); line-height: 2; text-align: justify; font-size: 1.05rem; margin-top: 1.5rem;">
+                نحن لا نقدم مجرد منتجات، بل شراكات طويلة الأمد مبنية على الثقة، الجودة، والدعم المستمر لتحقيق النجاح المشترك.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Requirements Section -->
+<section class="section" style="background: var(--bg-darker);">
+    <div class="container">
+        <div class="text-center mb-2xl">
+            <h2 class="mb-md" data-aos="fade-up">متطلبات <span class="text-gold">الشراكة</span></h2>
+        </div>
+
+        <div class="card" style="padding: 3rem; max-width: 1000px; margin: 0 auto;" data-aos="fade-up">
+            <h4 class="mb-lg text-gold">لضمان شراكة ناجحة ومستدامة، تعتمد مجموعة البراق معايير واضحة لاختيار وكلائها المعتمدين:</h4>
+            
+            <ul style="list-style: none; padding: 0;">
+                <li style="padding: 1rem; margin-bottom: 1rem; background: rgba(255,255,255,0.03); border-right: 4px solid var(--gold-primary); line-height: 1.8;">
+                    <i class="fas fa-check-circle" style="color: var(--gold-light); margin-left: 0.75rem;"></i>
+                    <strong>الالتزام باستيراد ما لا يقل عن 60 شاحنة أو جرار أو معدات ثقيلة سنوياً</strong> أو ما يعادلها من المنتجات الصناعية.
+                </li>
+                <li style="padding: 1rem; margin-bottom: 1rem; background: rgba(255,255,255,0.03); border-right: 4px solid var(--teal); line-height: 1.8;">
+                    <i class="fas fa-check-circle" style="color: var(--teal); margin-left: 0.75rem;"></i>
+                    <strong>تأمين مبلغ أولي قدره 5000 دولار</strong> لبدء الإجراءات الرسمية وتزويد الوكيل بالمعلومات والوثائق اللازمة. هذا المبلغ يُحتسب ضمن قيمة عربون إجمالي قدره 50,000 دولار.
+                </li>
+                <li style="padding: 1rem; margin-bottom: 1rem; background: rgba(255,255,255,0.03); border-right: 4px solid var(--purple); line-height: 1.8;">
+                    <i class="fas fa-check-circle" style="color: var(--purple); margin-left: 0.75rem;"></i>
+                    <strong>بعد استكمال الإجراءات</strong>، يلتزم الوكيل بدفع بقية العربون ليصبح الإجمالي 50,000 دولار، ويُخصم هذا المبلغ لاحقاً من قيمة الطلبات المستقبلية.
+                </li>
+                <li style="padding: 1rem; background: rgba(255,255,255,0.03); border-right: 4px solid var(--success); line-height: 1.8;">
+                    <i class="fas fa-check-circle" style="color: var(--success); margin-left: 0.75rem;"></i>
+                    <strong>عند انخفاض الرصيد المتبقي</strong> لدى الشركة إلى أقل من 10,000 دولار، يجب إعادة تعبئة الحساب بمبلغ إضافي لا يقل عن 40,000 دولار لضمان استمرار التوريد بسلاسة.
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Catalog Download Section -->
+<section class="section">
+    <div class="container">
+        <div class="text-center mb-2xl">
+            <h2 class="mb-md" data-aos="fade-up">تحميل <span class="text-gold">الكتالوج</span></h2>
+            <p style="color: var(--text-secondary); max-width: 700px; margin: 0 auto;" data-aos="fade-up" data-aos-delay="100">
+                للاطلاع على جميع أنواع المعدات والآلات المتوفرة لدينا بالتفصيل، يمكنكم تحميل الكتالوج الكامل من هنا.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-3 gap-lg">
+            {% for catalog in catalogs %}
+            <div class="card text-center" style="padding: 2rem;" data-aos="fade-up" data-aos-delay="{{ forloop.counter0 }}00">
+                <i class="fas fa-file-pdf" style="font-size: 4rem; color: var(--gold-light); margin-bottom: 1rem;"></i>
+                <h4 class="mb-md">{{ catalog.title }}</h4>
+                {% if catalog.description %}
+                <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1.5rem;">{{ catalog.description }}</p>
+                {% endif %}
+                <a href="{{ catalog.pdf_file.url }}" download class="btn btn-primary">
+                    <i class="fas fa-download"></i> تحميل الكتالوج
+                </a>
+            </div>
+            {% empty %}
+            <div class="text-center" style="grid-column: 1 / -1; padding: 3rem;">
+                <p style="color: var(--text-muted);">الكتالوجات قيد الإعداد...</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- WhatsApp Contact Section -->
+<section class="section" style="background: #25D366;">
+    <div class="container text-center">
+        <h2 style="color: white; margin-bottom: 1rem;" data-aos="fade-up">هل أنت مستعد للانضمام؟</h2>
+        <p style="color: white; opacity: 0.9; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;" data-aos="fade-up" data-aos-delay="100">
+            تواصل معنا الآن عبر واتساب لمناقشة فرصة الشراكة والإجابة على جميع استفساراتك
+        </p>
+        <a href="https://wa.me/{{ whatsapp_number|slice:'1:' }}" class="btn btn-lg" 
+           style="background: white; color: #25D366; font-weight: 600;" data-aos="fade-up" data-aos-delay="200">
+            <i class="fab fa-whatsapp" style="font-size: 1.5rem;"></i> تواصل معنا عبر واتساب
+        </a>
+    </div>
+</section>
+{% endblock %}

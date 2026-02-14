@@ -58,7 +58,12 @@ class VirtualShipment:
 
 def tracking_page(request):
     """Main tracking page"""
-    tracking_number = request.GET.get('tracking', '')
+    tracking_number = ''
+    if request.method == 'POST':
+        tracking_number = request.POST.get('tracking_number', '')
+    else:
+        tracking_number = request.GET.get('tracking', '') or request.GET.get('tracking_number', '')
+    
     shipment = None
     error = None
     

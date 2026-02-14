@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% load static i18n %}
 
-{% block title %}{% trans "FAQ" %} - AL BURAQ GROUP{% endblock %}
+{% block title %}{% trans "Frequently Asked Questions" %} - AL BURAQ GROUP{% endblock %}
 
 {% block extra_css %}
 <style>
@@ -40,106 +40,117 @@
     .faq-item.active .faq-question i {
         transform: rotate(180deg);
     }
-
-    .faq-answer {
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.3s ease;
-    }
-
-    .faq-answer-inner {
-        padding: 0 1.5rem 1.25rem;
-        color: var(--text-secondary);
-        line-height: 1.7;
-    }
 </style>
 {% endblock %}
 
 {% block content %}
 <!-- Hero -->
-<section style="padding: 150px 0 80px; background: linear-gradient(180deg, var(--bg-darker) 0%, var(--bg-dark) 100%);">
+<section
+    style="padding: 150px 0 80px; background: linear-gradient(180deg, var(--bg-darker) 0%, var(--bg-dark) 100%); position: relative; overflow: hidden;">
     <div class="container text-center">
         <h1 class="mb-md" data-aos="fade-up">{% trans "Frequently Asked" %} <span class="text-gold">{% trans "Questions" %}</span></h1>
         <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto;" data-aos="fade-up"
             data-aos-delay="100">
-            {% trans "Find answers to common questions about our services" %}
+            {% trans "Find answers to common questions about our services, shipping, and costs" %}
         </p>
+    </div>
+    <i class="fas fa-question"
+        style="position: absolute; right: -50px; bottom: -50px; font-size: 300px; opacity: 0.03; color: var(--gold-primary);"></i>
+</section>
+
+<!-- FAQ Actions -->
+<section class="section pb-0">
+    <div class="container">
+        <div class="flex justify-center gap-md" style="flex-wrap: wrap;" data-aos="fade-up">
+            <button class="btn btn-outline active" style="min-width: 150px;">{% trans "General Questions" %}</button>
+            <button class="btn btn-outline" style="min-width: 150px;">{% trans "Shipping" %}</button>
+            <button class="btn btn-outline" style="min-width: 150px;">{% trans "Payment" %}</button>
+            <button class="btn btn-outline" style="min-width: 150px;">{% trans "Customs Clearance" %}</button>
+        </div>
     </div>
 </section>
 
-<!-- FAQ Content -->
+<!-- FAQ List -->
 <section class="section">
     <div class="container" style="max-width: 900px;">
-        {% for category in categories %}
-        <div class="mb-2xl" data-aos="fade-up">
-            <h3 class="text-gold mb-lg"><i class="fas fa-folder"></i> {{ category.name }}</h3>
-            {% for faq in category.faqs.all %}
-            <div class="faq-item">
-                <div class="faq-question">
-                    <h4>{{ faq.question }}</h4>
-                    <i class="fas fa-chevron-down"></i>
+        <div class="faq-list">
+            {% for faq in faqs %}
+            <div class="card card-glass mb-md faq-item" data-aos="fade-up" data-aos-delay="{{ forloop.counter0|add:1 }}00" style="transition: all 0.3s ease; cursor: pointer;">
+                <div class="faq-header faq-question" style="padding: 1.5rem; display: flex; justify-content: space-between; align-items: center;">
+                    <h3 style="font-size: 1.1rem; margin: 0; padding-right: 1rem; color: #fff;">{{ faq.question }}</h3>
+                    <i class="fas fa-chevron-down text-gold transition-transform"></i>
                 </div>
-                <div class="faq-answer">
-                    <div class="faq-answer-inner">{{ faq.answer|linebreaks }}</div>
+                <div class="faq-body" style="height: 0; overflow: hidden; transition: height 0.3s ease;">
+                    <div style="padding: 0 1.5rem 1.5rem; color: var(--text-secondary); line-height: 1.7;">
+                        {{ faq.answer|linebreaks }}
+                    </div>
                 </div>
+            </div>
+            {% empty %}
+            <div class="text-center py-2xl">
+                <div
+                    style="width: 80px; height: 80px; background: rgba(255,255,255,0.05); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem;">
+                    <i class="far fa-folder-open" style="font-size: 2rem; color: var(--text-muted);"></i>
+                </div>
+                <h3 class="text-muted">{% trans "No FAQs available yet." %}</h3>
             </div>
             {% endfor %}
         </div>
-        {% endfor %}
-
-        {% if uncategorized_faqs %}
-        <div class="mb-2xl" data-aos="fade-up">
-            <h3 class="text-gold mb-lg"><i class="fas fa-question-circle"></i> {% trans "General Questions" %}</h3>
-            {% for faq in uncategorized_faqs %}
-            <div class="faq-item">
-                <div class="faq-question">
-                    <h4>{{ faq.question }}</h4>
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-                <div class="faq-answer">
-                    <div class="faq-answer-inner">{{ faq.answer|linebreaks }}</div>
-                </div>
-            </div>
-            {% endfor %}
-        </div>
-        {% endif %}
-
-        {% if not categories and not uncategorized_faqs %}
-        <div class="text-center" style="padding: 4rem;">
-            <i class="fas fa-question-circle"
-                style="font-size: 4rem; color: var(--text-muted); margin-bottom: 1.5rem;"></i>
-            <h3 style="color: var(--text-muted);">{% trans "No FAQs available yet" %}</h3>
-            <p style="color: var(--text-muted); margin-bottom: 2rem;">{% trans "Check back soon or contact us directly." %}</p>
-            <a href="{% url 'pages:contact' %}" class="btn btn-primary">{% trans "Contact Us" %}</a>
-        </div>
-        {% endif %}
     </div>
 </section>
 
 <!-- Still Have Questions -->
 <section class="section" style="background: var(--bg-darker);">
-    <div class="container">
-        <div class="card card-glass" style="padding: 3rem; text-align: center; max-width: 700px; margin: 0 auto;">
-            <i class="fas fa-headset" style="font-size: 3rem; color: var(--gold-light); margin-bottom: 1.5rem;"></i>
-            <h3 class="mb-md">{% trans "Still have questions?" %}</h3>
+    <div class="container text-center">
+        <div class="card card-glass inline-block" style="padding: 3rem; max-width: 600px; margin: 0 auto;"
+            data-aos="fade-up">
+            <i class="fas fa-headset mb-md" style="font-size: 3rem; color: var(--gold-primary);"></i>
+            <h2 class="mb-sm">{% trans "Still have questions?" %}</h2>
             <p style="color: var(--text-secondary); margin-bottom: 2rem;">
-                {% trans "Our team is here to help. Reach out to us anytime!" %}
+                {% trans "Can't find the answer you're looking for? Our team is here to help." %}
             </p>
-            <div class="flex justify-center gap-md" style="flex-wrap: wrap;">
+            <div class="flex justify-center gap-md">
                 <a href="https://wa.me/{{ COMPANY_WHATSAPP|slice:'1:' }}" class="btn btn-primary">
-                    <i class="fab fa-whatsapp"></i> {% trans "WhatsApp" %}
+                    <i class="fab fa-whatsapp"></i> {% trans "Contact Us" %}
                 </a>
-                <a href="mailto:{{ COMPANY_EMAIL }}" class="btn btn-secondary">
-                    <i class="fas fa-envelope"></i> {% trans "Email Us" %}
+                <a href="mailto:info@alburaq.com" class="btn btn-outline">
+                    <i class="far fa-envelope"></i> {% trans "Email Us" %}
                 </a>
             </div>
         </div>
     </div>
 </section>
-{% endblock %}
 
-{% block extra_js %}
 <script>
-    // initFaqAccordion(); // Removed as it is already initialized in main.js
+    document.addEventListener('DOMContentLoaded', function() {
+        const faqItems = document.querySelectorAll('.faq-item');
+        
+        faqItems.forEach(item => {
+            const header = item.querySelector('.faq-header');
+            const body = item.querySelector('.faq-body');
+            const icon = item.querySelector('.fa-chevron-down');
+            
+            header.addEventListener('click', () => {
+                const isOpen = body.style.height !== '0px' && body.style.height !== '';
+                
+                // Close all other items
+                faqItems.forEach(otherItem => {
+                    if (otherItem !== item) {
+                        otherItem.querySelector('.faq-body').style.height = '0px';
+                        otherItem.querySelector('.fa-chevron-down').style.transform = 'rotate(0deg)';
+                    }
+                });
+                
+                // Toggle current item
+                if (isOpen) {
+                    body.style.height = '0px';
+                    icon.style.transform = 'rotate(0deg)';
+                } else {
+                    body.style.height = body.scrollHeight + 'px';
+                    icon.style.transform = 'rotate(180deg)';
+                }
+            });
+        });
+    });
 </script>
 {% endblock %}

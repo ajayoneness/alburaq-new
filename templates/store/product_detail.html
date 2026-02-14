@@ -117,8 +117,8 @@
                             id="mainProductImage">
                         {% else %}
                         <div class="product-main-image"
-                            style="background: var(--bg-card); display: flex; align-items: center; justify-content: center;">
-                            <i class="fas fa-image" style="font-size: 5rem; color: var(--text-muted);"></i>
+                            style="background: linear-gradient(135deg, var(--bg-card), var(--bg-darker)); display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-box" style="font-size: 5rem; color: var(--gold-primary); opacity: 0.5;"></i>
                         </div>
                         {% endif %}
                     </div>
@@ -215,8 +215,8 @@
                 <img src="{{ prod.get_main_image.url }}" alt="{{ prod.name }}" class="card-image">
                 {% else %}
                 <div class="card-image"
-                    style="background: var(--bg-card-hover); display: flex; align-items: center; justify-content: center;">
-                    <i class="fas fa-image" style="font-size: 2rem; color: var(--text-muted);"></i>
+                    style="background: linear-gradient(135deg, var(--bg-card), var(--bg-darker)); display: flex; align-items: center; justify-content: center;">
+                    <i class="fas fa-box" style="font-size: 2rem; color: var(--gold-primary); opacity: 0.5;"></i>
                 </div>
                 {% endif %}
                 <div class="card-body">

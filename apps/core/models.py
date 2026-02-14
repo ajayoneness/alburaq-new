@@ -96,3 +96,21 @@ class HeroSlide(TranslatableModel):
     
     def __str__(self):
         return self.safe_translation_getter('title', any_language=True) or f"Slide {self.pk}"
+
+
+class TelegramChannel(TranslatableModel):
+    """Telegram channels with categories"""
+    translations = TranslatedFields(
+        category=models.CharField(max_length=200, verbose_name="Category Description"),
+    )
+    channel_url = models.URLField(verbose_name="Telegram Channel URL")
+    order = models.PositiveIntegerField(default=0)
+    is_active = models.BooleanField(default=True)
+    
+    class Meta:
+        ordering = ['order']
+        verbose_name = "Telegram Channel"
+        verbose_name_plural = "Telegram Channels"
+    
+    def __str__(self):
+        return f"{self.channel_url} - {self.safe_translation_getter('category', any_language=True) or 'No Category'}"
