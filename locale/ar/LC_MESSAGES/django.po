@@ -1,340 +1,333 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# AL BURAQ GROUP - Arabic Translations
+# Copyright (C) 2026 AL BURAQ GROUP
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: AL BURAQ GROUP 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-02-14 21:13+0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2026-02-16 16:39+0530\n"
+"Last-Translator: AL BURAQ GROUP\n"
+"Language-Team: Arabic\n"
+"Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
 #: apps/accounts/views.py:21
 msgid "Registration successful! Welcome to AL BURAQ GROUP."
-msgstr ""
+msgstr "تم التسجيل بنجاح! مرحباً بك في مجموعة البراق."
 
 #: apps/accounts/views.py:57
 msgid "Welcome back!"
-msgstr ""
+msgstr "مرحباً بعودتك!"
 
 #: apps/accounts/views.py:71
 msgid "You have been logged out."
-msgstr ""
+msgstr "تم تسجيل خروجك."
 
 #: apps/accounts/views.py:101
 msgid "Profile updated successfully!"
-msgstr ""
+msgstr "تم تحديث الملف الشخصي بنجاح!"
 
 #: apps/orders/views.py:64
 msgid "Product added to cart"
-msgstr ""
+msgstr "تمت إضافة المنتج إلى السلة"
 
 #: apps/orders/views.py:118
 msgid "Item removed from cart"
-msgstr ""
+msgstr "تمت إزالة المنتج من السلة"
 
 #: apps/orders/views.py:135 templates/orders/cart.html:111
 msgid "Your cart is empty"
-msgstr ""
+msgstr "سلة التسوق فارغة"
 
-#: ⁨templates/accounts/# AL BURAQ GROUP - International Trade &.txt⁩:22
 #: templates/core/home.html:30
 msgid ""
 "Specialized in international trade, sourcing, and logistics from China to "
 "the world. Quality products, reliable shipping, exceptional service."
 msgstr ""
+"متخصصون في التجارة الدولية والتوريد والخدمات اللوجستية من الصين إلى العالم. "
+"منتجات عالية الجودة، شحن موثوق، وخدمة استثنائية."
 
-#: ⁨templates/accounts/# AL BURAQ GROUP - International Trade &.txt⁩:30
 #: templates/core/home.html:98
 msgid ""
 "Fast and reliable air freight services for time-sensitive shipments "
 "worldwide."
-msgstr ""
+msgstr "خدمات شحن جوي سريعة وموثوقة للشحنات الحساسة للوقت في جميع أنحاء العالم."
 
-#: ⁨templates/accounts/# AL BURAQ GROUP - International Trade &.txt⁩:36
 #: templates/core/home.html:112
 msgid ""
 "Efficient rail and road transport connecting China to Central Asia and "
 "Europe."
-msgstr ""
+msgstr "نقل فعال بالسكك الحديدية والطرق يربط الصين بآسيا الوسطى وأوروبا."
 
-#: ⁨templates/accounts/# AL BURAQ GROUP - International Trade &.txt⁩:39
 #: templates/core/home.html:120
 msgid ""
 "Expert product sourcing from verified Chinese manufacturers and suppliers."
-msgstr ""
+msgstr "توريد منتجات خبير من مصنعين وموردين صينيين تم التحقق منهم."
 
-#: ⁨templates/accounts/# AL BURAQ GROUP - International Trade &.txt⁩:54
 #: templates/core/home.html:166
 msgid "Categories"
-msgstr ""
+msgstr "المنتجات"
 
-#: ⁨templates/accounts/# AL BURAQ GROUP - International Trade &.txt⁩:60
 #: templates/core/home.html:298
 msgid ""
 "With over 10 years of experience in international trade, we have built a "
 "reputation for reliability, quality, and exceptional customer service."
 msgstr ""
+"مع أكثر من 10 سنوات من الخبرة في التجارة الدولية، بنينا سمعة طيبة من حيث "
+"الموثوقية والجودة وخدمة العملاء الاستثنائية."
 
-#: ⁨templates/accounts/# AL BURAQ GROUP - International Trade &.txt⁩:63
 #: templates/core/home.html:309
 msgid "Rigorous quality control on all products"
-msgstr ""
+msgstr "مراقبة جودة صارمة على جميع المنتجات"
 
-#: ⁨templates/accounts/# AL BURAQ GROUP - International Trade &.txt⁩:66
 #: templates/core/home.html:320
 msgid "Direct factory prices without middlemen"
-msgstr ""
+msgstr "أسعار المصنع مباشرة بدون وسطاء"
 
-#: ⁨templates/accounts/# AL BURAQ GROUP - International Trade &.txt⁩:69
 #: templates/core/home.html:331
 msgid "Delivery to 50+ countries worldwide"
-msgstr ""
+msgstr "التسليم لأكثر من 50 دولة حول العالم"
 
-#: ⁨templates/accounts/# AL BURAQ GROUP - International Trade &.txt⁩:72
 #: templates/core/home.html:342
 msgid "Multilingual team available 24/7"
-msgstr ""
+msgstr "فريق متعدد اللغات متاح 24/7"
 
-#: ⁨templates/accounts/# AL BURAQ GROUP - International Trade &.txt⁩:94
 #: templates/core/home.html:448
 msgid "Ready to Start Your Import Business?"
-msgstr ""
+msgstr "هل أنت مستعد لبدء أعمال الاستيراد الخاصة بك؟"
 
-#: ⁨templates/accounts/# AL BURAQ GROUP - International Trade &.txt⁩:95
 #: templates/core/home.html:451
 msgid ""
 "Join thousands of satisfied clients who trust AL BURAQ GROUP for their "
 "sourcing and logistics needs."
 msgstr ""
+"انضم إلى آلاف العملاء الراضين الذين يثقون في مجموعة البراق لاحتياجاتهم "
+"من التوريد والخدمات اللوجستية."
 
 #: templates/accounts/dashboard.html:4
 msgid "Dashboard"
-msgstr ""
+msgstr "لوحة التحكم"
 
 #: templates/accounts/dashboard.html:12
 msgid "Welcome,"
-msgstr ""
+msgstr "مرحباً،"
 
 #: templates/accounts/dashboard.html:15
 msgid "Manage your account and orders"
-msgstr ""
+msgstr "إدارة حسابك وطلباتك"
 
 #: templates/accounts/dashboard.html:18
 msgid "Logout"
-msgstr ""
+msgstr "تسجيل الخروج"
 
 #: templates/accounts/dashboard.html:36
 msgid "Total Orders"
-msgstr ""
+msgstr "إجمالي الطلبات"
 
 #: templates/accounts/dashboard.html:50
 msgid "Active Shipments"
-msgstr ""
+msgstr "الشحنات النشطة"
 
 #: templates/accounts/dashboard.html:64
 msgid "Completed"
-msgstr ""
+msgstr "مكتملة"
 
 #: templates/accounts/dashboard.html:78
 msgid "Cart Items"
-msgstr ""
+msgstr "عناصر السلة"
 
 #: templates/accounts/dashboard.html:90
 msgid "Recent Orders"
-msgstr ""
+msgstr "الطلبات الأخيرة"
 
 #: templates/accounts/dashboard.html:91
 msgid "View All"
-msgstr ""
+msgstr "عرض الكل"
 
 #: templates/accounts/dashboard.html:101
 msgid "Order"
-msgstr ""
+msgstr "الطلب"
 
 #: templates/accounts/dashboard.html:104
 msgid "Date"
-msgstr ""
+msgstr "التاريخ"
 
 #: templates/accounts/dashboard.html:107
 msgid "Status"
-msgstr ""
+msgstr "الحالة"
 
 #: templates/accounts/dashboard.html:110 templates/orders/checkout.html:116
 #: templates/orders/order_complete.html:61
 msgid "Total"
-msgstr ""
+msgstr "المجموع"
 
 #: templates/accounts/dashboard.html:139
 msgid "No orders yet"
-msgstr ""
+msgstr "لا توجد طلبات بعد"
 
 #: templates/accounts/dashboard.html:140
 msgid "Start Shopping"
-msgstr ""
+msgstr "ابدأ التسوق"
 
 #: templates/accounts/dashboard.html:162 templates/accounts/profile.html:4
 #: templates/accounts/profile.html:11
 msgid "Edit Profile"
-msgstr ""
+msgstr "تعديل الملف الشخصي"
 
 #: templates/accounts/dashboard.html:165
 msgid "Change Password"
-msgstr ""
+msgstr "تغيير كلمة المرور"
 
 #: templates/accounts/dashboard.html:171
 msgid "Quick Actions"
-msgstr ""
+msgstr "إجراءات سريعة"
 
 #: templates/accounts/dashboard.html:176 templates/orders/cart.html:114
 msgid "Browse Products"
-msgstr ""
+msgstr "تصفح المنتجات"
 
 #: templates/accounts/dashboard.html:182
 msgid "View Cart"
-msgstr ""
+msgstr "عرض السلة"
 
 #: templates/accounts/dashboard.html:188 templates/core/home.html:38
 msgid "Track Shipment"
-msgstr ""
+msgstr "تتبع الشحنة"
 
 #: templates/accounts/dashboard.html:195
 msgid "Contact Support"
-msgstr ""
+msgstr "التواصل مع الدعم"
 
 #: templates/accounts/login.html:4 templates/base.html:83
 msgid "Login"
-msgstr ""
+msgstr "تسجيل الدخول"
 
 #: templates/accounts/login.html:13
 msgid "Welcome Back"
-msgstr ""
+msgstr "مرحباً بعودتك"
 
 #: templates/accounts/login.html:14
 msgid "Sign in to your account"
-msgstr ""
+msgstr "سجل الدخول إلى حسابك"
 
 #: templates/accounts/login.html:19
 msgid "Invalid username or password."
-msgstr ""
+msgstr "اسم المستخدم أو كلمة المرور غير صحيحة."
 
 #: templates/accounts/login.html:27
 msgid "Username or Email"
-msgstr ""
+msgstr "اسم المستخدم أو البريد الإلكتروني"
 
 #: templates/accounts/login.html:32 templates/accounts/register.html:84
 msgid "Password"
-msgstr ""
+msgstr "كلمة المرور"
 
 #: templates/accounts/login.html:39
 msgid "Remember me"
-msgstr ""
+msgstr "تذكرني"
 
 #: templates/accounts/login.html:41
 msgid "Forgot password?"
-msgstr ""
+msgstr "نسيت كلمة المرور؟"
 
 #: templates/accounts/login.html:47 templates/accounts/register.html:110
 msgid "Sign In"
-msgstr ""
+msgstr "تسجيل الدخول"
 
 #: templates/accounts/login.html:54
 msgid "Don't have an account?"
-msgstr ""
+msgstr "ليس لديك حساب؟"
 
 #: templates/accounts/login.html:56
 msgid "Sign Up"
-msgstr ""
+msgstr "إنشاء حساب"
 
 #: templates/accounts/profile.html:24 templates/accounts/register.html:35
 msgid "First Name"
-msgstr ""
+msgstr "الاسم الأول"
 
 #: templates/accounts/profile.html:28 templates/accounts/register.html:40
 msgid "Last Name"
-msgstr ""
+msgstr "اسم العائلة"
 
 #: templates/accounts/profile.html:34 templates/accounts/register.html:53
 #: templates/orders/checkout.html:35 templates/pages/contact.html:45
 #: templates/pages/contact.html:77
 msgid "Email"
-msgstr ""
+msgstr "البريد الإلكتروني"
 
 #: templates/accounts/profile.html:39 templates/pages/contact.html:57
 #: templates/pages/contact.html:84
 msgid "Phone"
-msgstr ""
+msgstr "الهاتف"
 
 #: templates/accounts/profile.html:44 templates/orders/checkout.html:45
 msgid "Company"
-msgstr ""
+msgstr "الشركة"
 
 #: templates/accounts/profile.html:49 templates/accounts/register.html:65
 #: templates/orders/checkout.html:57
 msgid "Country"
-msgstr ""
+msgstr "الدولة"
 
 #: templates/accounts/profile.html:54
 msgid "Address"
-msgstr ""
+msgstr "العنوان"
 
 #: templates/accounts/profile.html:60
 msgid "Save Changes"
-msgstr ""
+msgstr "حفظ التغييرات"
 
 #: templates/accounts/profile.html:63
 msgid "Cancel"
-msgstr ""
+msgstr "إلغاء"
 
 #: templates/accounts/register.html:4
 msgid "Register"
-msgstr ""
+msgstr "التسجيل"
 
 #: templates/accounts/register.html:13 templates/accounts/register.html:101
 #: templates/core/home.html:456
 msgid "Create Account"
-msgstr ""
+msgstr "إنشاء حساب"
 
 #: templates/accounts/register.html:14
 msgid "Join us and start trading"
-msgstr ""
+msgstr "انضم إلينا وابدأ التداول"
 
 #: templates/accounts/register.html:47
 msgid "Username"
-msgstr ""
+msgstr "اسم المستخدم"
 
 #: templates/accounts/register.html:59 templates/orders/checkout.html:40
 msgid "Phone (with country code)"
-msgstr ""
+msgstr "الهاتف (مع رمز الدولة)"
 
 #: templates/accounts/register.html:67
 msgid "Select your country"
-msgstr ""
+msgstr "اختر دولتك"
 
 #: templates/accounts/register.html:89
 msgid "Confirm Password"
-msgstr ""
+msgstr "تأكيد كلمة المرور"
 
 #: templates/accounts/register.html:96
 msgid "I agree to the"
-msgstr ""
+msgstr "أوافق على"
 
 #: templates/accounts/register.html:96
 msgid "Terms of Service"
-msgstr ""
+msgstr "شروط الخدمة"
 
 #: templates/accounts/register.html:108
 msgid "Already have an account?"
-msgstr ""
+msgstr "لديك حساب بالفعل؟"
 
 #: templates/base.html:50 templates/base.html:151
 msgid "Home"
@@ -406,27 +399,27 @@ msgstr "تواصل معنا"
 
 #: templates/base.html:175 templates/pages/contact.html:33
 msgid "WhatsApp"
-msgstr ""
+msgstr "واتساب"
 
 #: templates/base.html:181
 msgid "All rights reserved."
-msgstr ""
+msgstr "جميع الحقوق محفوظة."
 
 #: templates/base.html:182
 msgid "Made with"
-msgstr ""
+msgstr "صنع بـ"
 
 #: templates/base.html:182
 msgid "in China"
-msgstr ""
+msgstr "في الصين"
 
 #: templates/base.html:188 templates/pages/services.html:216
 msgid "Chat on WhatsApp"
-msgstr ""
+msgstr "دردشة عبر واتساب"
 
 #: templates/core/home.html:4
 msgid "AL BURAQ GROUP - International Trade & Logistics"
-msgstr ""
+msgstr "مجموعة البراق - التجارة الدولية والخدمات اللوجستية"
 
 #: templates/core/home.html:26
 msgid "Your Gateway to"
@@ -438,112 +431,112 @@ msgstr "التجارة العالمية"
 
 #: templates/core/home.html:35
 msgid "Browse Store"
-msgstr ""
+msgstr "تصفح المتجر"
 
 #: templates/core/home.html:49
 msgid "Years Experience"
-msgstr ""
+msgstr "سنوات من الخبرة"
 
 #: templates/core/home.html:54 templates/store/category_list.html:33
 msgid "Products"
-msgstr ""
+msgstr "منتجاتنا"
 
 #: templates/core/home.html:59
 msgid "Happy Clients"
-msgstr ""
+msgstr "عملاء سعداء"
 
 #: templates/core/home.html:64
 msgid "Countries Served"
-msgstr ""
+msgstr "الدول المخدومة"
 
 #: templates/core/home.html:85 templates/core/home.html:385
 #: templates/pages/services.html:10
 msgid "Our"
-msgstr ""
+msgstr "خدماتنا"
 
 #: templates/core/home.html:89
 msgid "Comprehensive trade and logistics solutions tailored to your needs"
-msgstr ""
+msgstr "حلول تجارية ولوجستية شاملة مصممة خصيصاً لاحتياجاتك"
 
 #: templates/core/home.html:105
 msgid "Cost-effective sea freight solutions for bulk and large shipments."
-msgstr ""
+msgstr "حلول شحن بحري فعالة من حيث التكلفة للشحنات الضخمة والكبيرة."
 
 #: templates/core/home.html:127 templates/pages/services.html:111
 msgid "Quality Control"
-msgstr ""
+msgstr "مراقبة الجودة"
 
 #: templates/core/home.html:128
 msgid "Rigorous quality inspection to ensure products meet your standards."
-msgstr ""
+msgstr "فحص صارم للجودة لضمان تلبية المنتجات لمعاييرك."
 
 #: templates/core/home.html:135
 msgid "Packing & Assembly"
-msgstr ""
+msgstr "التغليف والتجميع"
 
 #: templates/core/home.html:136
 msgid "Professional packaging and assembly services for your products."
-msgstr ""
+msgstr "خدمات تغليف وتجميع احترافية لمنتجاتك."
 
 #: templates/core/home.html:142
 msgid "Documentation"
-msgstr ""
+msgstr "التوثيق"
 
 #: templates/core/home.html:143
 msgid "Complete customs clearance and documentation handling."
-msgstr ""
+msgstr "تخليص جمركي كامل ومعالجة الوثائق."
 
 #: templates/core/home.html:149
 msgid "24/7 Support"
-msgstr ""
+msgstr "دعم على مدار الساعة"
 
 #: templates/core/home.html:150
 msgid "Dedicated support team available round the clock for assistance."
-msgstr ""
+msgstr "فريق دعم مخصص متاح على مدار الساعة للمساعدة."
 
 #: templates/core/home.html:156
 msgid "View All Services"
-msgstr ""
+msgstr "عرض جميع الخدمات"
 
 #: templates/core/home.html:166
 msgid "Product"
-msgstr ""
+msgstr "تصنيفات"
 
 #: templates/core/home.html:169
 msgid "Explore our wide range of wholesale products from China"
-msgstr ""
+msgstr "استكشف مجموعتنا الواسعة من المنتجات بالجملة من الصين"
 
 #: templates/core/home.html:188 templates/store/category_list.html:82
 msgid "products"
-msgstr ""
+msgstr "منتجات"
 
 #: templates/core/home.html:194
 msgid "Categories coming soon..."
-msgstr ""
+msgstr "التصنيفات قريباً..."
 
 #: templates/core/home.html:201
 msgid "Browse All Products"
-msgstr ""
+msgstr "تصفح جميع المنتجات"
 
 #: templates/core/home.html:296
 msgid "Why Choose"
-msgstr ""
+msgstr "لماذا تختار"
 
 #: templates/core/home.html:308
 msgid "Quality Guaranteed"
-msgstr ""
+msgstr "جودة مضمونة"
 
 #: templates/core/home.html:319
 msgid "Competitive Prices"
-msgstr ""
+msgstr "أسعار تنافسية"
 
 #: templates/core/home.html:330
 msgid "Global Shipping"
-msgstr ""
+msgstr "شحن عالمي"
 
 #: templates/core/home.html:341
 msgid "Dedicated Support"
-msgstr ""
+msgstr "دعم مخصص"
 
 #: templates/core/home.html:350 templates/tracking/tracking.html:4
 msgid "Track Your Shipment"
@@ -559,15 +552,15 @@ msgstr "تتبع الآن"
 
 #: templates/core/home.html:364
 msgid "Need help? Contact us directly:"
-msgstr ""
+msgstr "تحتاج مساعدة؟ اتصل بنا مباشرة:"
 
 #: templates/core/home.html:385
 msgid "Offices"
-msgstr ""
+msgstr "مكاتبنا"
 
 #: templates/core/home.html:389
 msgid "Visit our offices in China for personalized service"
-msgstr ""
+msgstr "تفضل بزيارة مكاتبنا في الصين للحصول على خدمة مخصصة"
 
 #: templates/faq/faq_list.html:4
 msgid "Frequently Asked Questions"
@@ -620,153 +613,154 @@ msgstr "راسلنا عبر البريد"
 
 #: templates/orders/cart.html:4 templates/orders/cart.html:10
 msgid "Shopping Cart"
-msgstr ""
+msgstr "سلة التسوق"
 
 #: templates/orders/cart.html:68
 msgid "Continue Shopping"
-msgstr ""
+msgstr "متابعة التسوق"
 
 #: templates/orders/cart.html:75 templates/orders/checkout.html:100
 msgid "Order Summary"
-msgstr ""
+msgstr "ملخص الطلب"
 
 #: templates/orders/cart.html:78
 msgid "Items"
-msgstr ""
+msgstr "العناصر"
 
 #: templates/orders/cart.html:84
 msgid "Subtotal"
-msgstr ""
+msgstr "المجموع الفرعي"
 
 #: templates/orders/cart.html:89
 msgid "Shipping costs will be calculated after checkout."
-msgstr ""
+msgstr "سيتم حساب تكاليف الشحن بعد إتمام الطلب."
 
 #: templates/orders/cart.html:93
 msgid "Proceed to Checkout"
-msgstr ""
+msgstr "المتابعة إلى الدفع"
 
 #: templates/orders/cart.html:99
 msgid "Or inquire directly:"
-msgstr ""
+msgstr "أو استفسر مباشرة:"
 
 #: templates/orders/cart.html:100
 msgid "I would like to place an order"
-msgstr ""
+msgstr "أود تقديم طلب"
 
 #: templates/orders/cart.html:102
 msgid "Order via WhatsApp"
-msgstr ""
+msgstr "اطلب عبر واتساب"
 
 #: templates/orders/cart.html:112
 msgid "Browse our products and add items to your cart."
-msgstr ""
+msgstr "تصفح منتجاتنا وأضف العناصر إلى سلتك."
 
 #: templates/orders/cart.html:137
 msgid "Remove this item from cart?"
-msgstr ""
+msgstr "إزالة هذا المنتج من السلة؟"
 
 #: templates/orders/checkout.html:4 templates/orders/checkout.html:11
 msgid "Checkout"
-msgstr ""
+msgstr "إتمام الطلب"
 
 #: templates/orders/checkout.html:26
 msgid "Contact Information"
-msgstr ""
+msgstr "معلومات الاتصال"
 
 #: templates/orders/checkout.html:30
 msgid "Full Name"
-msgstr ""
+msgstr "الاسم الكامل"
 
 #: templates/orders/checkout.html:54
 msgid "Shipping Address"
-msgstr ""
+msgstr "عنوان الشحن"
 
 #: templates/orders/checkout.html:63
 msgid "City"
-msgstr ""
+msgstr "المدينة"
 
 #: templates/orders/checkout.html:67
 msgid "Postal Code"
-msgstr ""
+msgstr "الرمز البريدي"
 
 #: templates/orders/checkout.html:73
 msgid "Full Address"
-msgstr ""
+msgstr "العنوان الكامل"
 
 #: templates/orders/checkout.html:75
 msgid "Street address, building, floor, etc."
-msgstr ""
+msgstr "عنوان الشارع، المبنى، الطابق، إلخ."
 
 #: templates/orders/checkout.html:82
 msgid "Additional Notes"
-msgstr ""
+msgstr "ملاحظات إضافية"
 
 #: templates/orders/checkout.html:85
 msgid "Order Notes"
-msgstr ""
+msgstr "ملاحظات الطلب"
 
 #: templates/orders/checkout.html:87
 msgid "Any special instructions for your order..."
-msgstr ""
+msgstr "أي تعليمات خاصة لطلبك..."
 
 #: templates/orders/checkout.html:92
 msgid "Place Order"
-msgstr ""
+msgstr "تأكيد الطلب"
 
 #: templates/orders/checkout.html:123
 msgid ""
 "After placing your order, you'll receive an Excel order sheet and can "
 "complete payment via WhatsApp."
 msgstr ""
+"بعد تقديم طلبك، ستتلقى ورقة طلب إكسل ويمكنك إتمام الدفع عبر واتساب."
 
 #: templates/orders/checkout.html:127
 msgid "Back to Cart"
-msgstr ""
+msgstr "العودة إلى السلة"
 
 #: templates/orders/order_complete.html:4
 msgid "Order Complete"
-msgstr ""
+msgstr "اكتمل الطلب"
 
 #: templates/orders/order_complete.html:15
 msgid "Order Placed Successfully!"
-msgstr ""
+msgstr "تم تقديم الطلب بنجاح!"
 
 #: templates/orders/order_complete.html:18
 msgid "Thank you for your order. Your order number is:"
-msgstr ""
+msgstr "شكراً لطلبك. رقم طلبك هو:"
 
 #: templates/orders/order_complete.html:27
 msgid "Next Steps:"
-msgstr ""
+msgstr "الخطوات التالية:"
 
 #: templates/orders/order_complete.html:29
 msgid "Download your order details (Excel)"
-msgstr ""
+msgstr "تحميل تفاصيل طلبك (إكسل)"
 
 #: templates/orders/order_complete.html:30
 msgid "Contact us via WhatsApp to confirm your order"
-msgstr ""
+msgstr "تواصل معنا عبر واتساب لتأكيد طلبك"
 
 #: templates/orders/order_complete.html:31
 msgid "We'll provide shipping quote and payment details"
-msgstr ""
+msgstr "سنوفر لك عرض سعر الشحن وتفاصيل الدفع"
 
 #: templates/orders/order_complete.html:38
 msgid "Download Order Excel"
-msgstr ""
+msgstr "تحميل إكسل الطلب"
 
 #: templates/orders/order_complete.html:43
 msgid "Confirm via WhatsApp"
-msgstr ""
+msgstr "تأكيد عبر واتساب"
 
 #: templates/orders/order_complete.html:49
 msgid "Order Details"
-msgstr ""
+msgstr "تفاصيل الطلب"
 
 #: templates/orders/order_complete.html:68
 msgid "Back to Home"
-msgstr ""
+msgstr "العودة إلى الصفحة الرئيسية"
 
 #: templates/pages/about.html:11
 msgid "About"
@@ -794,21 +788,29 @@ msgid ""
 "manufacturers and international buyers. Named after the legendary creature "
 "known for its speed and reliability, we embody these qualities in every "
 "aspect of our service."
-msgstr "تأسست مجموعة البراق برؤية واضحة تهدف إلى سد الفجوة بين المصنعين الصينيين والمشترين الدوليين. سُميت تيمناً بالمخلوق الأسطوري المعروف بسرعته وموثوقيته، ونحن نجسد هذه الصفات في كل جانب من جوانب خدماتنا."
+msgstr ""
+"تأسست مجموعة البراق برؤية واضحة تهدف إلى سد الفجوة بين المصنعين الصينيين "
+"والمشترين الدوليين. سُميت تيمناً بالمخلوق الأسطوري المعروف بسرعته وموثوقيته، "
+"ونحن نجسد هذه الصفات في كل جانب من جوانب خدماتنا."
 
 #: templates/pages/about.html:41
 msgid ""
 "With offices strategically located in Yiwu and Guangzhou - two of China's "
 "largest trading hubs - we provide our clients with direct access to "
 "thousands of factories and suppliers."
-msgstr "مع مكاتب تقع استراتيجياً في ييوو وقوانغتشو - وهما من أكبر المراكز التجارية في الصين - نوفر لعملائنا وصولاً مباشراً إلى آلاف المصانع والموردين."
+msgstr ""
+"مع مكاتب تقع استراتيجياً في ييوو وقوانغتشو - وهما من أكبر المراكز التجارية "
+"في الصين - نوفر لعملائنا وصولاً مباشراً إلى آلاف المصانع والموردين."
 
 #: templates/pages/about.html:44
 msgid ""
 "Our multilingual team speaks Arabic, English, Chinese, French, Turkish, "
 "Spanish, Italian, and Russian, ensuring smooth communication with clients "
 "from all over the world."
-msgstr "فريقنا متعدد اللغات يتحدث العربية، الإنجليزية، الصينية، الفرنسية، التركية، الإسبانية، الإيطالية، والروسية، مما يضمن تواصلاً سلساً مع العملاء من جميع أنحاء العالم."
+msgstr ""
+"فريقنا متعدد اللغات يتحدث العربية، الإنجليزية، الصينية، الفرنسية، التركية، "
+"الإسبانية، الإيطالية، والروسية، مما يضمن تواصلاً سلساً مع العملاء من جميع "
+"أنحاء العالم."
 
 #: templates/pages/about.html:60
 msgid "Our Vision"
@@ -819,7 +821,9 @@ msgid ""
 "To be the world's most trusted bridge between Chinese manufacturers and "
 "global businesses, setting the standard for quality, reliability, and "
 "customer service in international trade."
-msgstr "أن نكون الجسر الأكثر موثوقية في العالم بين المصنعين الصينيين والشركات العالمية، واضعين معايير جديدة للجودة والموثوقية وخدمة العملاء في التجارة الدولية."
+msgstr ""
+"أن نكون الجسر الأكثر موثوقية في العالم بين المصنعين الصينيين والشركات العالمية، "
+"واضعين معايير جديدة للجودة والموثوقية وخدمة العملاء في التجارة الدولية."
 
 #: templates/pages/about.html:72
 msgid "Our Mission"
@@ -830,7 +834,9 @@ msgid ""
 "To provide comprehensive trade solutions that empower businesses worldwide "
 "to source quality products from China with confidence, efficiency, and "
 "complete peace of mind."
-msgstr "تقديم حلول تجارية شاملة تمكن الشركات في جميع أنحاء العالم من استيراد منتجات عالية الجودة من الصين بثقة وكفاءة وراحة بال تامة."
+msgstr ""
+"تقديم حلول تجارية شاملة تمكن الشركات في جميع أنحاء العالم من استيراد منتجات "
+"عالية الجودة من الصين بثقة وكفاءة وراحة بال تامة."
 
 #: templates/pages/about.html:85
 msgid "Our Core Values"
@@ -870,373 +876,390 @@ msgstr "نخدم عملاء في أكثر من 50 دولة حول العالم"
 
 #: templates/pages/about.html:258
 msgid "CEO & Founder"
-msgstr ""
+msgstr "المدير التنفيذي والمؤسس"
 
 #: templates/pages/about.html:259
 msgid "Chief Executive Officer"
-msgstr ""
+msgstr "الرئيس التنفيذي"
 
 #: templates/pages/about.html:260
 msgid ""
 "Leading AL BURAQ GROUP with vision and dedication to excellence in "
 "international trade."
-msgstr ""
+msgstr "قيادة مجموعة البراق برؤية وتفانٍ في التميز في التجارة الدولية."
 
 #: templates/pages/about.html:268
 msgid "Operations Manager"
-msgstr ""
+msgstr "مدير العمليات"
 
 #: templates/pages/about.html:269
 msgid "Head of Operations"
-msgstr ""
+msgstr "رئيس العمليات"
 
 #: templates/pages/about.html:270
 msgid "Ensuring smooth logistics and delivery for all our clients worldwide."
-msgstr ""
+msgstr "ضمان سلاسة الخدمات اللوجستية والتسليم لجميع عملائنا حول العالم."
 
 #: templates/pages/about.html:278
 msgid "Sales Director"
-msgstr ""
+msgstr "مدير المبيعات"
 
 #: templates/pages/about.html:279
 msgid "Head of Sales"
-msgstr ""
+msgstr "رئيس قسم المبيعات"
 
 #: templates/pages/about.html:280
 msgid ""
 "Building relationships and connecting clients with the best suppliers in "
 "China."
-msgstr ""
+msgstr "بناء العلاقات وربط العملاء بأفضل الموردين في الصين."
 
 #: templates/pages/about.html:290
 msgid "Ready to Work With Us?"
-msgstr ""
+msgstr "هل أنت مستعد للعمل معنا؟"
 
 #: templates/pages/about.html:292
 msgid "Contact our team today and let's discuss your sourcing needs."
-msgstr ""
+msgstr "تواصل مع فريقنا اليوم ودعنا نناقش احتياجاتك من التوريد."
 
 #: templates/pages/contact.html:11
 msgid "Get in"
-msgstr ""
+msgstr "تواصل"
 
 #: templates/pages/contact.html:11
 msgid "Touch"
-msgstr ""
+msgstr "معنا"
 
 #: templates/pages/contact.html:15
 msgid ""
 "We'd love to hear from you. Reach out to us through any of the channels "
 "below."
-msgstr ""
+msgstr "يسعدنا سماع رأيك. تواصل معنا عبر أي من القنوات أدناه."
 
 #: templates/pages/contact.html:34
 msgid "Chat with us instantly"
-msgstr ""
+msgstr "تحدث معنا فوراً"
 
 #: templates/pages/contact.html:46
 msgid "Send us an email"
-msgstr ""
+msgstr "أرسل لنا بريداً إلكترونياً"
 
 #: templates/pages/contact.html:58
 msgid "Call us directly"
-msgstr ""
+msgstr "اتصل بنا مباشرة"
 
 #: templates/pages/contact.html:67
 msgid "Send Us a Message"
-msgstr ""
+msgstr "أرسل لنا رسالة"
 
 #: templates/pages/contact.html:73
 msgid "Your Name"
-msgstr ""
+msgstr "اسمك"
 
 #: templates/pages/contact.html:88
 msgid "Subject"
-msgstr ""
+msgstr "الموضوع"
 
 #: templates/pages/contact.html:90
 msgid "Select a subject"
-msgstr ""
+msgstr "اختر موضوعاً"
 
 #: templates/pages/contact.html:91
 msgid "General Inquiry"
-msgstr ""
+msgstr "استفسار عام"
 
 #: templates/pages/contact.html:92
 msgid "Product Sourcing"
-msgstr ""
+msgstr "توريد المنتجات"
 
 #: templates/pages/contact.html:93
 msgid "Shipping Quote"
-msgstr ""
+msgstr "عرض سعر الشحن"
 
 #: templates/pages/contact.html:94
 msgid "Order Status"
-msgstr ""
+msgstr "حالة الطلب"
 
 #: templates/pages/contact.html:95
 msgid "Partnership"
-msgstr ""
+msgstr "شراكة"
 
 #: templates/pages/contact.html:96
 msgid "Other"
-msgstr ""
+msgstr "أخرى"
 
 #: templates/pages/contact.html:102
 msgid "Your Message"
-msgstr ""
+msgstr "رسالتك"
 
 #: templates/pages/contact.html:104
 msgid "Tell us about your requirements..."
-msgstr ""
+msgstr "أخبرنا عن متطلباتك..."
 
 #: templates/pages/contact.html:108
 msgid "Send Message"
-msgstr ""
+msgstr "إرسال الرسالة"
 
 #: templates/pages/contact.html:116
 msgid "Our Offices"
-msgstr ""
+msgstr "مكاتبنا"
 
 #: templates/pages/contact.html:144
 msgid "Follow Us"
-msgstr ""
+msgstr "تابعنا"
 
 #: templates/pages/services.html:14
 msgid "Comprehensive trade and logistics solutions for your business"
-msgstr ""
+msgstr "حلول تجارية ولوجستية شاملة لأعمالك"
 
 #: templates/pages/services.html:31
 msgid ""
 "Fast and reliable air freight services for time-sensitive shipments. Ideal "
 "for urgent orders and high-value goods that need quick delivery worldwide."
 msgstr ""
+"خدمات الشحن الجوي السريعة والموثوقة للشحنات الحساسة للوقت. مثالية للطلبات "
+"العاجلة والبضائع ذات القيمة العالية التي تحتاج إلى تسليم سريع في جميع أنحاء العالم."
 
 #: templates/pages/services.html:35
 msgid "Delivery in 3-7 days"
-msgstr ""
+msgstr "التسليم في 3-7 أيام"
 
 #: templates/pages/services.html:37
 msgid "Door-to-door service"
-msgstr ""
+msgstr "خدمة من الباب إلى الباب"
 
 #: templates/pages/services.html:39
 msgid "Real-time tracking"
-msgstr ""
+msgstr "تتبع في الوقت الحقيقي"
 
 #: templates/pages/services.html:52
 msgid ""
 "Cost-effective ocean freight for bulk shipments. Perfect for large orders "
 "where time is flexible but cost efficiency is paramount."
 msgstr ""
+"شحن بحري فعال من حيث التكلفة للشحنات الضخمة. مثالي للطلبات الكبيرة حيث "
+"يكون الوقت مرنًا ولكن الكفاءة من حيث التكلفة هي الأهم."
 
 #: templates/pages/services.html:55
 msgid "FCL & LCL options"
-msgstr ""
+msgstr "خيارات FCL و LCL"
 
 #: templates/pages/services.html:57
 msgid "Major ports worldwide"
-msgstr ""
+msgstr "الموانئ الرئيسية في جميع أنحاء العالم"
 
 #: templates/pages/services.html:59
 msgid "Competitive rates"
-msgstr ""
+msgstr "أسعار تنافسية"
 
 #: templates/pages/services.html:72
 msgid ""
 "Rail and road freight connecting China to Central Asia, Middle East, and "
 "Europe via the Belt and Road routes."
 msgstr ""
+"الشحن عبر السكك الحديدية والطرق البرية الذي يربط الصين بآسيا الوسطى "
+"والشرق الأوسط وأوروبا عبر طرق الحزام والطريق."
 
 #: templates/pages/services.html:75
 msgid "China-Europe Express"
-msgstr ""
+msgstr "قطار الصين-أوروبا السريع"
 
 #: templates/pages/services.html:77
 msgid "Faster than sea freight"
-msgstr ""
+msgstr "أسرع من الشحن البحري"
 
 #: templates/pages/services.html:79
 msgid "Regular departures"
-msgstr ""
+msgstr "رحلات منتظمة"
 
 #: templates/pages/services.html:91
 msgid "Sourcing & Purchasing"
-msgstr ""
+msgstr "التوريد والشراء"
 
 #: templates/pages/services.html:92
 msgid ""
 "Expert product sourcing from verified Chinese manufacturers. We find the "
 "best suppliers and negotiate the best prices for you."
 msgstr ""
+"توريد منتجات خبير من مصنعين صينيين تم التحقق منهم. نجد أفضل الموردين "
+"ونتفاوض على أفضل الأسعار لك."
 
 #: templates/pages/services.html:95
 msgid "Factory verification"
-msgstr ""
+msgstr "التحقق من المصنع"
 
 #: templates/pages/services.html:97
 msgid "Price negotiation"
-msgstr ""
+msgstr "التفاوض على السعر"
 
 #: templates/pages/services.html:99
 msgid "Sample management"
-msgstr ""
+msgstr "إدارة العينات"
 
 #: templates/pages/services.html:112
 msgid ""
 "Rigorous quality inspection at every stage. Our QC team ensures     products "
 "meet your specifications before shipping."
 msgstr ""
+"فحص دقيق للجودة في كل مرحلة. يضمن فريق مراقبة الجودة لدينا أن المنتجات "
+"تلبي مواصفاتك قبل الشحن."
 
 #: templates/pages/services.html:115
 msgid "Pre-shipment inspection"
-msgstr ""
+msgstr "فحص ما قبل الشحن"
 
 #: templates/pages/services.html:117
 msgid "Detailed reports"
-msgstr ""
+msgstr "تقارير مفصلة"
 
 #: templates/pages/services.html:119
 msgid "Photo documentation"
-msgstr ""
+msgstr "توثيق بالصور"
 
 #: templates/pages/services.html:131
 msgid "Assembly & Packing"
-msgstr ""
+msgstr "التجميع والتغليف"
 
 #: templates/pages/services.html:132
 msgid ""
 "Professional packaging and assembly services. We consolidate products from "
 "multiple suppliers and pack according to your requirements."
 msgstr ""
+"خدمات تغليف وتجميع احترافية. نقوم بدمج المنتجات من موردين متعددين "
+"وتغليفها وفقًا لمتطلباتك."
 
 #: templates/pages/services.html:135
 msgid "Custom packaging"
-msgstr ""
+msgstr "تغليف مخصص"
 
 #: templates/pages/services.html:137
 msgid "Labeling & branding"
-msgstr ""
+msgstr "وضع العلامات والعلامات التجارية"
 
 #: templates/pages/services.html:139
 msgid "Consolidation"
-msgstr ""
+msgstr "تجميع الشحنات"
 
 #: templates/pages/services.html:151
 msgid "Documentation & Customs"
-msgstr ""
+msgstr "التوثيق والجمارك"
 
 #: templates/pages/services.html:152
 msgid ""
 "Complete customs clearance and documentation handling. We   navigate complex "
 "regulations so you don't have to."
 msgstr ""
+"تخليص جمركي كامل ومعالجة الوثائق. نتنقل عبر اللوائح المعقدة حتى لا تضطر لذلك."
 
 #: templates/pages/services.html:155
 msgid "Export documentation"
-msgstr ""
+msgstr "وثائق التصدير"
 
 #: templates/pages/services.html:157
 msgid "Customs clearance"
-msgstr ""
+msgstr "التخليص الجمركي"
 
 #: templates/pages/services.html:159
 msgid "Compliance consulting"
-msgstr ""
+msgstr "استشارات الامتثال"
 
 #: templates/pages/services.html:171
 msgid "Mechanism of Action"
-msgstr ""
+msgstr "آلية العمل"
 
 #: templates/pages/services.html:172
 msgid ""
 "A streamlined process from order to delivery. We handle every step of your "
 "import journey with precision and care."
 msgstr ""
+"عملية مبسطة من الطلب إلى التسليم. نتعامل مع كل خطوة في رحلة الاستيراد "
+"الخاصة بك بدقة وعناية."
 
 #: templates/pages/services.html:175
 msgid "End-to-end management"
-msgstr ""
+msgstr "إدارة شاملة"
 
 #: templates/pages/services.html:177
 msgid "Regular updates"
-msgstr ""
+msgstr "تحديثات منتظمة"
 
 #: templates/pages/services.html:179
 msgid "Dedicated support"
-msgstr ""
+msgstr "دعم مخصص"
 
 #: templates/pages/services.html:191 templates/pages/success_stories.html:4
 msgid "Success Stories"
-msgstr ""
+msgstr "قصص النجاح"
 
 #: templates/pages/services.html:192
 msgid ""
 "Join hundreds of satisfied clients who have grown their businesses with AL "
 "BURAQ GROUP. Our track record speaks for itself."
 msgstr ""
+"انضم إلى مئات العملاء الراضين الذين نموا أعمالهم مع مجموعة البراق. "
+"سجلنا يتحدث عن نفسه."
 
 #: templates/pages/services.html:194
 msgid "View Case Studies"
-msgstr ""
+msgstr "عرض دراسات الحالة"
 
 #: templates/pages/services.html:205
 msgid "Need a Custom Solution?"
-msgstr ""
+msgstr "هل تحتاج إلى حل مخصص؟"
 
 #: templates/pages/services.html:207
 msgid ""
 "Contact us to discuss your specific requirements and get a tailored quote."
-msgstr ""
+msgstr "اتصل بنا لمناقشة متطلباتك الخاصة والحصول على عرض أسعار مخصص."
 
 #: templates/pages/services.html:212
 msgid "Get a Quote"
-msgstr ""
+msgstr "احصل على عرض أسعار"
 
 #: templates/pages/success_stories.html:10
 msgid "Success"
-msgstr ""
+msgstr "قصص"
 
 #: templates/pages/success_stories.html:10
 msgid "Stories"
-msgstr ""
+msgstr "النجاح"
 
 #: templates/pages/success_stories.html:14
 msgid ""
 "See how we've helped businesses grow with our sourcing and logistics services"
-msgstr ""
+msgstr "شاهد كيف ساعدنا الشركات على النمو من خلال خدمات التوريد واللوجستيات"
 
 #: templates/pages/success_stories.html:41
 msgid "Results"
-msgstr ""
+msgstr "النتائج"
 
 #: templates/pages/success_stories.html:57
 msgid "Success stories coming soon"
-msgstr ""
+msgstr "قصص النجاح قريباً"
 
 #: templates/pages/success_stories.html:68
 msgid "Ready to Be Our Next Success Story?"
-msgstr ""
+msgstr "هل أنت مستعد لتكون قصة نجاحنا القادمة؟"
 
 #: templates/pages/success_stories.html:70
 msgid "Start your journey with AL BURAQ GROUP today."
-msgstr ""
+msgstr "ابدأ رحلتك مع مجموعة البراق اليوم."
 
 #: templates/pages/success_stories.html:74
 msgid "Get Started"
-msgstr ""
+msgstr "ابدأ الآن"
 
 #: templates/store/category_detail.html:28
 msgid "Subcategories"
-msgstr ""
+msgstr "التصنيفات الفرعية"
 
 #: templates/store/category_detail.html:56
 msgid "Min"
-msgstr ""
+msgstr "الحد الأدنى"
 
 #: templates/store/category_detail.html:72
 msgid "No products in this category yet"
-msgstr ""
+msgstr "لا توجد منتجات في هذا التصنيف بعد"
 
 #: templates/store/category_list.html:33
 msgid "Browse Our"
@@ -1274,43 +1297,43 @@ msgstr "إرسال استفسار"
 
 #: templates/store/product_detail.html:145
 msgid "Minimum Order"
-msgstr ""
+msgstr "الحد الأدنى للطلب"
 
 #: templates/store/product_detail.html:149
 msgid "Availability"
-msgstr ""
+msgstr "التوفر"
 
 #: templates/store/product_detail.html:150
 msgid "In Stock"
-msgstr ""
+msgstr "متوفر"
 
 #: templates/store/product_detail.html:170
 msgid "Add to Cart"
-msgstr ""
+msgstr "أضف إلى السلة"
 
 #: templates/store/product_detail.html:176
 msgid "I am interested in:"
-msgstr ""
+msgstr "أنا مهتم بـ:"
 
 #: templates/store/product_detail.html:179
 msgid "Inquire on WhatsApp"
-msgstr ""
+msgstr "استفسر عبر واتساب"
 
 #: templates/store/product_detail.html:186
 msgid "Description"
-msgstr ""
+msgstr "الوصف"
 
 #: templates/store/product_detail.html:195
 msgid "Specifications"
-msgstr ""
+msgstr "المواصفات"
 
 #: templates/store/product_detail.html:210
 msgid "Related Products"
-msgstr ""
+msgstr "منتجات ذات صلة"
 
 #: templates/store/product_detail.html:226
 msgid "View"
-msgstr ""
+msgstr "عرض"
 
 #: templates/tracking/tracking.html:11
 msgid "Track Your"
@@ -1328,3 +1351,12 @@ msgstr "حول العالم"
 
 msgid "We are proud at Al Buraq Group to have a network of agents and partners in several countries around the world, working with us to provide the best sourcing, shipping, and industrial equipment solutions. We continue to expand our agent network to ensure closer and faster service to our clients and partners in various markets."
 msgstr "نفخر في مجموعة البراق بشبكة وكلاء وشركاء في عدة دول حول العالم، يعملون معنا لتوفير أفضل حلول التوريد والشحن والمعدات الصناعية. نواصل توسيع شبكة وكلائنا لضمان خدمة أقرب وأسرع لعملائنا وشركائنا في مختلف الأسواق."
+
+msgid "Team Members:"
+msgstr "فريق العمل:"
+
+msgid "More agents coming soon..."
+msgstr "قريباً سنضيف المزيد من الوكلاء..."
+
+msgid "Join Al Buraq Agents"
+msgstr "انضم لوكلاء البراق"

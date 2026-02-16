@@ -130,7 +130,7 @@
                     
                     <!-- Telegram Channels Popup -->
                     <div id="telegramPopup" style="display: none; position: absolute; bottom: 100%; left: 0; background: var(--bg-card); border-radius: var(--radius-lg); padding: 1.5rem; min-width: 350px; box-shadow: 0 10px 40px rgba(0,0,0,0.3); z-index: 1000; margin-bottom: 1rem;">
-                        <h4 style="margin-bottom: 1rem; color: var(--gold-light);"><i class="fab fa-telegram" style="margin-left: 0.5rem;"></i> قنواتنا على تليجرام</h4>
+                        <h4 style="margin-bottom: 1rem; color: var(--gold-light);"><i class="fab fa-telegram" style="margin-left: 0.5rem;"></i> {% trans "Our Telegram Channels" %}</h4>
                         <div style="max-height: 400px; overflow-y: auto;">
                             {% for channel in telegram_channels %}
                             <a href="{{ channel.channel_url }}" target="_blank" style="display: block; padding: 0.75rem; margin-bottom: 0.5rem; background: rgba(255,255,255,0.05); border-radius: var(--radius-md); text-decoration: none; color: var(--text-primary); transition: all 0.3s;" onmouseover="this.style.background='rgba(255,255,255,0.1)'" onmouseout="this.style.background='rgba(255,255,255,0.05)'">
@@ -138,7 +138,7 @@
                                 <span style="color: var(--gold-light); font-size: 0.85rem;">{{ channel.category }}</span>
                             </a>
                             {% empty %}
-                            <p style="color: var(--text-secondary); font-size: 0.9rem;">قريباً...</p>
+                            <p style="color: var(--text-secondary); font-size: 0.9rem;">{% trans "Coming soon..." %}</p>
                             {% endfor %}
                         </div>
                     </div>

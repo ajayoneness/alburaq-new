@@ -1,15 +1,15 @@
 {% extends 'base.html' %}
 {% load static i18n %}
 
-{% block title %}نصائح الاستيراد - AL BURAQ GROUP{% endblock %}
+{% block title %}{% trans "Import Tips" %} - AL BURAQ GROUP{% endblock %}
 
 {% block content %}
 <!-- Hero Section -->
 <section style="padding: 150px 0 80px; background: linear-gradient(180deg, var(--bg-darker) 0%, var(--bg-dark) 100%);">
     <div class="container text-center">
-        <h1 class="mb-md" data-aos="fade-up">نصائح <span class="text-gold">وتجارب الاستيراد</span></h1>
+        <h1 class="mb-md" data-aos="fade-up">{% trans "Tips" %} <span class="text-gold">{% trans "and Import Experiences" %}</span></h1>
         <p style="color: var(--text-secondary); max-width: 700px; margin: 0 auto; line-height: 1.8;" data-aos="fade-up" data-aos-delay="100">
-            عالم الاستيراد والتجارة الدولية مليء بالتفاصيل التي قد تبدو بسيطة لكنها تؤثر بشكل مباشر على نجاح الشحنة وربحية المشروع
+            {% trans "The world of import and international trade is full of details that may seem simple but directly affect the success of the shipment and the profitability of the project" %}
         </p>
     </div>
 </section>
@@ -34,15 +34,15 @@
                         {{ tip.content|truncatewords:25 }}
                     </p>
                     <span class="badge badge-gold">
-                        <i class="fas fa-arrow-left"></i> اقرأ المزيد
+                        <i class="fas fa-arrow-left"></i> {% trans "Read More" %}
                     </span>
                 </div>
             </a>
             {% empty %}
             <div class="text-center" style="grid-column: 1 / -1; padding: 5rem;">
                 <i class="fas fa-book-open" style="font-size: 5rem; color: var(--text-muted); margin-bottom: 1.5rem;"></i>
-                <h3 style="color: var(--text-muted);">قريباً...</h3>
-                <p style="color: var(--text-secondary);">نقوم بإعداد المزيد من النصائح والتجارب المفيدة</p>
+                <h3 style="color: var(--text-muted);">{% trans "Coming soon..." %}</h3>
+                <p style="color: var(--text-secondary);">{% trans "We are preparing more useful tips and experiences" %}</p>
             </div>
             {% endfor %}
         </div>
@@ -53,12 +53,12 @@
 <section class="section" style="background: var(--bg-darker);">
     <div class="container text-center">
         <div class="card card-glass" style="padding: 4rem; max-width: 800px; margin: 0 auto;" data-aos="fade-up">
-            <h2 class="mb-lg">من خلال خبرتنا الطويلة...</h2>
+            <h2 class="mb-lg">{% trans "From our long experience..." %}</h2>
             <p style="color: var(--text-secondary); line-height: 2; margin-bottom: 2rem;">
-                نشارك معكم أهم النصائح والتجارب العملية التي تساعدكم على اتخاذ قرارات صحيحة وتجنب الأخطاء المكلفة في عالم الشحن والتوريد من الصين
+                {% trans "We share with you the most important tips and practical experiences that help you make the right decisions and avoid costly mistakes in the world of shipping and sourcing from China" %}
             </p>
             <a href="{% url 'pages:contact' %}" class="btn btn-primary btn-lg">
-                <i class="fas fa-envelope"></i> استشر خبراءنا
+                <i class="fas fa-envelope"></i> {% trans "Consult Our Experts" %}
             </a>
         </div>
     </div>

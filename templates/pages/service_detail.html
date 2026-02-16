@@ -33,7 +33,7 @@
 <section class="section" style="background: var(--bg-darker);">
     <div class="container">
         <div class="text-center mb-2xl">
-            <h2 class="mb-md" data-aos="fade-up">الدول <span class="text-gold">المتاحة</span></h2>
+            <h2 class="mb-md" data-aos="fade-up">{% trans "Available" %} <span class="text-gold">{% trans "Countries" %}</span></h2>
         </div>
 
         <div class="grid grid-cols-2 gap-xl">
@@ -50,7 +50,7 @@
         <div class="text-center mt-2xl" data-aos="fade-up">
             <p style="color: var(--text-secondary); margin-bottom: 1rem;">
                 <i class="fas fa-info-circle" style="color: var(--gold-light); margin-left: 0.5rem;"></i>
-                الأسعار قابلة للتحديث أسبوعياً حسب السوق والظروف اللوجستية
+                {% trans "Prices are subject to weekly updates based on market and logistics conditions" %}
             </p>
         </div>
     </div>
@@ -62,7 +62,7 @@
 <section class="section" style="background: var(--bg-darker);">
     <div class="container">
         <div class="text-center mb-2xl">
-            <h2 class="mb-md" data-aos="fade-up">نصائح <span class="text-gold">وتجارب</span></h2>
+            <h2 class="mb-md" data-aos="fade-up">{% trans "Tips" %} <span class="text-gold">{% trans "and Experiences" %}</span></h2>
         </div>
 
         <div class="grid grid-cols-3 gap-lg">
@@ -79,7 +79,7 @@
                     <h4 class="card-title">{{ tip.title }}</h4>
                     <p class="card-text">{{ tip.content|truncatewords:30 }}</p>
                     <span class="badge badge-gold mt-md">
-                        <i class="fas fa-arrow-left"></i> اقرأ المزيد
+                        <i class="fas fa-arrow-left"></i> {% trans "Read More" %}
                     </span>
                 </div>
             </a>
@@ -92,16 +92,16 @@
 <!-- CTA Section -->
 <section class="section" style="background: var(--gold-gradient);">
     <div class="container text-center">
-        <h2 style="color: var(--bg-dark);" data-aos="fade-up">هل تحتاج لمزيد من المعلومات؟</h2>
+        <h2 style="color: var(--bg-dark);" data-aos="fade-up">{% trans "Need more information?" %}</h2>
         <p style="color: var(--bg-dark); opacity: 0.8; margin-bottom: 2rem;" data-aos="fade-up" data-aos-delay="100">
-            فريقنا جاهز للإجابة على جميع استفساراتك
+            {% trans "Our team is ready to answer all your questions" %}
         </p>
         <div class="flex justify-center gap-md" style="flex-wrap: wrap;" data-aos="fade-up" data-aos-delay="200">
             <a href="{% url 'pages:contact' %}" class="btn" style="background: var(--bg-dark); color: var(--gold-light);">
-                <i class="fas fa-envelope"></i> تواصل معنا
+                <i class="fas fa-envelope"></i> {% trans "Contact Us" %}
             </a>
             <a href="https://wa.me/{{ COMPANY_WHATSAPP|slice:'1:' }}" class="btn" style="background: white; color: var(--bg-dark);">
-                <i class="fab fa-whatsapp"></i> واتساب
+                <i class="fab fa-whatsapp"></i> {% trans "WhatsApp" %}
             </a>
         </div>
     </div>

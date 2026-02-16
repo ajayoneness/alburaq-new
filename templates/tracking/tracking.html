@@ -46,27 +46,27 @@
                     {% if shipment.estimated_delivery %}
                     <div style="padding: 1.5rem; text-align: center; flex: 1; min-width: 200px; border-left: 1px solid rgba(255,255,255,0.05);">
                         <i class="fas fa-calendar-alt mb-xs" style="color: var(--gold-light); font-size: 1.2rem;"></i>
-                        <p style="color: var(--text-muted); font-size: 0.8rem; margin-bottom: 0.2rem;">تاريخ الوصول المتوقع</p>
+                        <p style="color: var(--text-muted); font-size: 0.8rem; margin-bottom: 0.2rem;">{% trans "Estimated Arrival Date" %}</p>
                         <p style="font-weight: 600; color: #fff;">{{ shipment.estimated_delivery }}</p>
                     </div>
                     {% endif %}
                     <div style="padding: 1.5rem; text-align: center; flex: 1; min-width: 200px; border-left: 1px solid rgba(255,255,255,0.05);">
                         <i class="fas fa-box mb-xs" style="color: var(--gold-light); font-size: 1.2rem;"></i>
-                         <p style="color: var(--text-muted); font-size: 0.8rem; margin-bottom: 0.2rem;">الطرود</p>
+                         <p style="color: var(--text-muted); font-size: 0.8rem; margin-bottom: 0.2rem;">{% trans "Packages" %}</p>
                         <p style="font-weight: 600; color: #fff;">{{ shipment.total_packages }}</p>
                     </div>
                     {% if shipment.total_weight %}
                     <div style="padding: 1.5rem; text-align: center; flex: 1; min-width: 200px;">
                         <i class="fas fa-weight-hanging mb-xs" style="color: var(--gold-light); font-size: 1.2rem;"></i>
-                        <p style="color: var(--text-muted); font-size: 0.8rem; margin-bottom: 0.2rem;">الوزن</p>
-                        <p style="font-weight: 600; color: #fff;">{{ shipment.total_weight }} كجم</p>
+                        <p style="color: var(--text-muted); font-size: 0.8rem; margin-bottom: 0.2rem;">{% trans "Weight" %}</p>
+                        <p style="font-weight: 600; color: #fff;">{{ shipment.total_weight }} {% trans "kg" %}</p>
                     </div>
                     {% endif %}
                 </div>
 
                 <!-- Timeline -->
                 <div style="padding: 2rem;">
-                    <h4 class="mb-lg" style="color: var(--gold-primary);">سجل التتبع</h4>
+                    <h4 class="mb-lg" style="color: var(--gold-primary);">{% trans "Tracking History" %}</h4>
                     <div class="tracking-timeline">
                         {% for update in shipment.updates.all %}
                         <div class="timeline-item" style="display: flex; gap: 1.5rem; position: relative; padding-bottom: 2rem; opacity: 0; animation: fadeSlideIn 0.5s ease forwards; animation-delay: {{ forloop.counter0|add:2 }}00ms;">
@@ -93,7 +93,7 @@
                             </div>
                         </div>
                         {% empty %}
-                        <p style="color: var(--text-muted); text-align: center; padding: 2rem;">لا توجد تحديثات متاحة حالياً.</p>
+                        <p style="color: var(--text-muted); text-align: center; padding: 2rem;">{% trans "No updates available at this time." %}</p>
                         {% endfor %}
                     </div>
                 </div>
@@ -128,22 +128,22 @@
             <div class="card card-glass text-center" style="padding: 2rem;" data-aos="fade-up">
                 <i class="fas fa-question-circle"
                     style="font-size: 3rem; color: var(--gold-light); margin-bottom: 1rem;"></i>
-                <h4 class="mb-sm">نسيت رقم التتبع؟</h4>
-                <p style="color: var(--text-secondary); font-size: 0.9rem;">تواصل مع فريق الدعم وسنساعدك في العثور على شحنتك.</p>
+                <h4 class="mb-sm">{% trans "Forgot your tracking number?" %}</h4>
+                <p style="color: var(--text-secondary); font-size: 0.9rem;">{% trans "Contact our support team and we'll help you find your shipment." %}</p>
             </div>
 
             <div class="card card-glass text-center" style="padding: 2rem;" data-aos="fade-up" data-aos-delay="100">
                 <i class="fas fa-clock" style="font-size: 3rem; color: var(--teal); margin-bottom: 1rem;"></i>
-                <h4 class="mb-sm">تأخرت الشحنة؟</h4>
-                <p style="color: var(--text-secondary); font-size: 0.9rem;">تواصل معنا للحصول على تحديثات حول أي شحنات متأخرة.</p>
+                <h4 class="mb-sm">{% trans "Shipment delayed?" %}</h4>
+                <p style="color: var(--text-secondary); font-size: 0.9rem;">{% trans "Contact us for updates on any delayed shipments." %}</p>
             </div>
 
             <div class="card card-glass text-center" style="padding: 2rem;" data-aos="fade-up" data-aos-delay="200">
                 <i class="fas fa-headset" style="font-size: 3rem; color: var(--purple); margin-bottom: 1rem;"></i>
-                <h4 class="mb-sm">تحتاج مساعدة؟</h4>
-                <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem;">فريقنا متاح 24/7 لمساعدتك.</p>
+                <h4 class="mb-sm">{% trans "Need help?" %}</h4>
+                <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem;">{% trans "Our team is available 24/7 to help you." %}</p>
                 <a href="https://wa.me/{{ COMPANY_WHATSAPP|slice:'1:' }}" class="btn btn-primary btn-sm">
-                    <i class="fab fa-whatsapp"></i> تواصل معنا
+                    <i class="fab fa-whatsapp"></i> {% trans "Contact Us" %}
                 </a>
             </div>
         </div>

@@ -130,16 +130,16 @@
     <div class="container">
         <!-- Section Title and Intro -->
         <div class="text-center mb-2xl">
-            <h2 class="mb-lg" data-aos="fade-up">التعرّف أكثر على <span class="text-gold">فريق مجموعة البراق</span></h2>
+            <h2 class="mb-lg" data-aos="fade-up">{% trans "Get to Know" %} <span class="text-gold">{% trans "AL BURAQ Team" %}</span></h2>
             <p style="color: var(--text-secondary); max-width: 900px; margin: 0 auto; line-height: 2; font-size: 1.1rem;" data-aos="fade-up" data-aos-delay="100">
-                نفتخر في مجموعة البراق بفريق عمل احترافي يضم خبرات متنوعة في مجالات التجارة الدولية، التوريد، الشحن، والمعدات الصناعية. يعمل فريقنا بروح واحدة لتقديم أفضل الحلول لعملائنا وبناء شراكات طويلة الأمد قائمة على الثقة والجودة والاحترافية.
+                {% trans "We are proud at AL BURAQ GROUP to have a professional team with diverse expertise in international trade, sourcing, shipping, and industrial equipment. Our team works together to provide the best solutions for our clients and build long-term partnerships based on trust, quality, and professionalism." %}
             </p>
         </div>
 
         <!-- Management Team Section (Large Cards) -->
         {% if team_managers %}
         <div class="mb-3xl">
-            <h3 class="text-center mb-2xl" style="font-size: 2rem; color: var(--gold-light);" data-aos="fade-up">الإدارة</h3>
+            <h3 class="text-center mb-2xl" style="font-size: 2rem; color: var(--gold-light);" data-aos="fade-up">{% trans "Management" %}</h3>
             <div class="grid grid-cols-3 gap-2xl">
                 {% for manager in team_managers %}
                 <div class="card" style="padding: 3rem; text-align: center;" data-aos="fade-up" data-aos-delay="{{ forloop.counter0 }}00">
@@ -195,7 +195,7 @@
         <!-- Full Team Section (Grouped by Teams) -->
         {% if teams %}
         <div>
-            <h3 class="text-center mb-2xl" style="font-size: 2rem; color: var(--teal);" data-aos="fade-up">فريق عمل مجموعة البراق</h3>
+            <h3 class="text-center mb-2xl" style="font-size: 2rem; color: var(--teal);" data-aos="fade-up">{% trans "AL BURAQ Team Members" %}</h3>
             
             {% for team in teams %}
             {% with active_members=team.get_active_members %}

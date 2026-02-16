@@ -241,7 +241,7 @@
                 <!-- Team Members -->
                 {% if agent.team_members.all %}
                 <div class="mb-lg">
-                    <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 0.75rem;">فريق العمل:</p>
+                    <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 0.75rem;">{% trans "Team Members:" %}</p>
                     <div style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
                         {% for member in agent.team_members.all %}
                         <div style="text-align: center;">
@@ -275,14 +275,14 @@
             {% empty %}
             <div class="text-center" style="grid-column: 1 / -1; padding: 3rem;">
                 <i class="fas fa-users" style="font-size: 4rem; color: var(--text-muted); margin-bottom: 1rem;"></i>
-                <p style="color: var(--text-muted);">قريباً سنضيف المزيد من الوكلاء...</p>
+                <p style="color: var(--text-muted);">{% trans "More agents coming soon..." %}</p>
             </div>
             {% endfor %}
         </div>
 
         <div class="text-center mt-2xl" data-aos="fade-up">
             <a href="{% url 'pages:become_agent' %}" class="btn btn-primary btn-lg">
-                <i class="fas fa-handshake"></i> انضم لوكلاء البراق
+                <i class="fas fa-handshake"></i> {% trans "Join Al Buraq Agents" %}
             </a>
         </div>
     </div>

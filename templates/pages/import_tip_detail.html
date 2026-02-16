@@ -43,7 +43,7 @@
 <section class="section" style="background: var(--bg-darker);">
     <div class="container">
         <div class="text-center mb-2xl">
-            <h2 class="mb-md" data-aos="fade-up">نصائح <span class="text-gold">أخرى</span></h2>
+            <h2 class="mb-md" data-aos="fade-up">{% trans "Other" %} <span class="text-gold">{% trans "Tips" %}</span></h2>
         </div>
 
         <div class="grid grid-cols-3 gap-lg">
@@ -60,7 +60,7 @@
                 <div class="card-body">
                     <h4 class="card-title">{{ other_tip.title }}</h4>
                     <span class="badge badge-teal mt-md">
-                        <i class="fas fa-arrow-left"></i> اقرأ المزيد
+                        <i class="fas fa-arrow-left"></i> {% trans "Read More" %}
                     </span>
                 </div>
             </a>
@@ -69,7 +69,7 @@
 
         <div class="text-center mt-xl" data-aos="fade-up">
             <a href="{% url 'pages:import_tips' %}" class="btn btn-secondary">
-                <i class="fas fa-list"></i> جميع النصائح
+                <i class="fas fa-list"></i> {% trans "All Tips" %}
             </a>
         </div>
     </div>
@@ -79,13 +79,13 @@
 <!-- Contact CTA -->
 <section class="section" style="background: var(--gold-gradient);">
     <div class="container text-center">
-        <h2 style="color: var(--bg-dark);" data-aos="fade-up">البراق – القبطان في الصين</h2>
+        <h2 style="color: var(--bg-dark);" data-aos="fade-up">{% trans "AL BURAQ – The Captain in China" %}</h2>
         <p style="color: var(--bg-dark); opacity: 0.9; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;" data-aos="fade-up" data-aos-delay="100">
-            إدارة احترافية، وضوح كامل، وراحة بالك في كل مرحلة
+            {% trans "Professional management, complete transparency, and peace of mind at every stage" %}
         </p>
         <a href="https://wa.me/{{ COMPANY_WHATSAPP|slice:'1:' }}" class="btn btn-lg" 
            style="background: var(--bg-dark); color: var(--gold-light);" data-aos="fade-up" data-aos-delay="200">
-            <i class="fab fa-whatsapp"></i> تواصل معنا الآن
+            <i class="fab fa-whatsapp"></i> {% trans "Contact Us Now" %}
         </a>
     </div>
 </section>
